@@ -1,7 +1,7 @@
 # Welcome! # 
 My name is @CraigRegester!
 
-I am an IT Enterprise Architect living in Indiana (USA), having focused my entire career thus far (22 years!) in the healthcare provider space. I enjoy developing solutions that betters the care for patients and eases the burden on clinical team members.
+I am Senior Solution Architect living in Indiana (USA), having focused my entire career thus far (23 years!) in the healthcare sector. I enjoy developing solutions that improves the care for patients and eases the burden on clinical team members.
 
 ## On a more personal note... ##
 I am an avid learner, tinkerer and builder of creative solutions using novel multisystem integrations.
