@@ -2725,6 +2725,915 @@
 							</component>
 						</organizer>
 					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="BATTERY" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.1"/>
+							<id extension="312045017" root="1.2.840.114350.1.13.387.2.7.2.798268"/>
+							<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" nullFlavor="UNK">
+								<originalText>CMP</originalText>
+								<translation code="682" codeSystem="1.2.840.114350.1.13.387.2.7.2.696580" codeSystemName="Epic.EAP.ID" displayName="CMP"/>
+							</code>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="20230323130900+0000"/>
+								<high value="20230323130900+0000"/>
+							</effectiveTime>
+							<performer typeCode="PRF">
+								<time value="20230323172000+0000"/>
+								<assignedEntity>
+									<id nullFlavor="UNK"/>
+									<addr nullFlavor="NA"/>
+									<telecom nullFlavor="NA"/>
+									<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+										<name>WM RALEIGH CAMPUS LAB</name>
+										<addr>
+											<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+											<city>Raleigh</city>
+											<state>NC</state>
+											<postalCode>27610</postalCode>
+										</addr>
+									</representedOrganization>
+								</assignedEntity>
+							</performer>
+							<author>
+								<templateId root="2.16.840.1.113883.10.20.22.4.119"/>
+								<templateId extension="2019-10-01" root="2.16.840.1.113883.10.20.22.5.6"/>
+								<time value="20230323132000-0400"/>
+								<assignedAuthor>
+									<id nullFlavor="UNK" root="2.16.840.1.113883.4.6"/>
+									<addr nullFlavor="UNK"/>
+									<telecom nullFlavor="UNK"/>
+									<representedOrganization>
+										<id extension="28900" root="1.2.840.114350.1.13.387.2.7.2.688879"/>
+										<id nullFlavor="UNK" root="2.16.840.1.113883.4.2"/>
+										<id nullFlavor="UNK" root="2.16.840.1.113883.4.6"/>
+										<name>WakeMed Health &amp; Hospitals</name>
+										<addr use="WP">
+											<streetAddressLine>3000 New Bern Ave</streetAddressLine>
+											<city>Raleigh</city>
+											<state>NC</state>
+											<postalCode>27610</postalCode>
+											<country>US</country>
+										</addr>
+									</representedOrganization>
+								</assignedAuthor>
+							</author>
+							<informant>
+								<assignedEntity>
+									<id extension="urn:wakemed:prd" root="1.2.840.114350.1.13.387.2.7.3.688879.110"/>
+									<representedOrganization>
+										<name>WakeMed Health &amp; Hospitals</name>
+									</representedOrganization>
+								</assignedEntity>
+							</informant>
+							<participant typeCode="RESP">
+								<participantRole classCode="PROV">
+									<id extension="1124382130" root="2.16.840.1.113883.4.6"/>
+									<code code="207Q00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Physician Family Medicine">
+										<originalText>Family Medicine</originalText>
+										<translation code="19" codeSystem="1.2.840.114350.1.72.1.7.7.10.688867.4160" codeSystemName="Epic.DXC.StandardProviderSpecialtyType" displayName="Family Medicine"/>
+										<translation code="9" codeSystem="1.2.840.114350.1.13.387.2.7.10.836982.1050" codeSystemName="Epic.SER.ProviderSpecialty" displayName="Family Medicine"/>
+									</code>
+									<addr use="WP">
+										<streetAddressLine>10010 FALLS OF NEUSE ROAD</streetAddressLine>
+										<streetAddressLine>SUITE 103</streetAddressLine>
+										<city>RALEIGH</city>
+										<state>NC</state>
+										<postalCode>27614</postalCode>
+									</addr>
+									<telecom use="WP" value="tel:+1-919-848-6946"/>
+									<telecom value="fax:+1-919-350-9823"/>
+									<playingEntity classCode="PSN">
+										<name use="L">
+											<given>Dominick</given>
+											<family>Trapani</family>
+											<suffix qualifier="AC">DO</suffix>
+											<validTime>
+												<low nullFlavor="UNK"/>
+												<high nullFlavor="UNK"/>
+											</validTime>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<component>
+								<procedure classCode="PROC" moodCode="EVN">
+									<code code="17636008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Specimen collection (procedure)"/>
+									<effectiveTime value="20230323130900+0000"/>
+									<targetSiteCode nullFlavor="UNK"/>
+									<participant typeCode="PRD">
+										<templateId root="1.2.840.114350.1.72.3.12"/>
+										<participantRole classCode="SPEC">
+											<id extension="312045017" root="1.2.840.114350.1.13.387.2.7.7.798268.300"/>
+											<playingEntity>
+												<code nullFlavor="UNK"/>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<entryRelationship typeCode="COMP">
+										<act classCode="ACT" moodCode="EVN">
+											<templateId root="1.3.6.1.4.1.19376.1.3.1.3"/>
+											<code code="SPRECEIVE" codeSystem="1.3.5.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" displayName="Specimen Receive"/>
+											<effectiveTime value="20230323163700+0000"/>
+										</act>
+									</entryRelationship>
+								</procedure>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.1" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="2951-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Sodium
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp1Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mmol/L" value="138" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>136 - 145</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mmol/L" value="136"/>
+												<high unit="mmol/L" value="145"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.2" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="2823-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Potassium
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp2Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp2"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mmol/L" value="4.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>3.5 - 5.1</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mmol/L" value="3.5"/>
+												<high unit="mmol/L" value="5.1"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.3" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="2075-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Chloride
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp3Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp3"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mmol/L" value="101" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>99 - 108</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mmol/L" value="99"/>
+												<high unit="mmol/L" value="108"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.4" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="1963-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>CO2
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp4Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp4"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mmol/L" value="28" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>21 - 31</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mmol/L" value="21"/>
+												<high unit="mmol/L" value="31"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.5" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="3094-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>BUN
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp5Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp5"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mg/dL" value="16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>7 - 25</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mg/dL" value="7"/>
+												<high unit="mg/dL" value="25"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.6" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="2160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Creatinine
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp6Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp6"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mg/dL" value="0.73" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>0.67 - 1.20</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mg/dL" value="0.67"/>
+												<high unit="mg/dL" value="1.20"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.7" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="2345-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Glucose, Random
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp7Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp7"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mg/dL" value="181" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>70 - 199</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mg/dL" value="70"/>
+												<high unit="mg/dL" value="199"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.8" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="17861-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Calcium, Total
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp8Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp8"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mg/dL" value="9.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>8.8 - 10.6</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mg/dL" value="8.8"/>
+												<high unit="mg/dL" value="10.6"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.9" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="18182-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Osmolality (calculated)
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp9Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp9"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value value="281" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="REAL"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="246514001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="units"/>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ST">mOsm/kg</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange>
+										<observationRange>
+											<text>270 - 295 mOsm/kg</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="270">
+														<originalText>mOsm/kg</originalText>
+													</translation>
+												</low>
+												<high nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="295">
+														<originalText>mOsm/kg</originalText>
+													</translation>
+												</high>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.10" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="33037-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Anion Gap
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp10Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp10"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value value="9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="REAL"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>3 - 11</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_REAL">
+												<low value="3"/>
+												<high value="11"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.11" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="1751-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Albumin
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp11Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp11"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="g/dL" value="4.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>3.5 - 5.7</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="g/dL" value="3.5"/>
+												<high unit="g/dL" value="5.7"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.12" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="1975-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Bilirubin, Total
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp12Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp12"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="mg/dL" value="0.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>0.3 - 1.0</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="mg/dL" value="0.3"/>
+												<high unit="mg/dL" value="1.0"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.13" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="6768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Alkaline Phosphatase
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp13Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp13"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value value="63" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="REAL"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="246514001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="units"/>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ST">IU/L</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange>
+										<observationRange>
+											<text>34 - 104 IU/L</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="34">
+														<originalText>IU/L</originalText>
+													</translation>
+												</low>
+												<high nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="104">
+														<originalText>IU/L</originalText>
+													</translation>
+												</high>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.14" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="1742-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>ALT
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp14Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp14"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value value="49" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="REAL"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="246514001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="units"/>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ST">IU/L</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange>
+										<observationRange>
+											<text>7 - 52 IU/L</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="7">
+														<originalText>IU/L</originalText>
+													</translation>
+												</low>
+												<high nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="52">
+														<originalText>IU/L</originalText>
+													</translation>
+												</high>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.15" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="1920-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>AST
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp15Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp15"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value value="19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="REAL"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<entryRelationship typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="246514001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="units"/>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ST">IU/L</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange>
+										<observationRange>
+											<text>13 - 39 IU/L</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="13">
+														<originalText>IU/L</originalText>
+													</translation>
+												</low>
+												<high nullFlavor="OTH">
+													<translation nullFlavor="OTH" value="39">
+														<originalText>IU/L</originalText>
+													</translation>
+												</high>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.16" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="2885-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Protein, Total
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp16Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp16"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value unit="g/dL" value="6.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PQ"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>6.4 - 8.9</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_PQ">
+												<low unit="g/dL" value="6.4"/>
+												<high unit="g/dL" value="8.9"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.2"/>
+									<id extension="312045017.17" root="1.2.840.114350.1.13.387.2.7.6.798268.2000"/>
+									<code code="1759-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+										<originalText>Albumin/Globulin Ratio
+																<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp17Name"/>
+										</originalText>
+									</code>
+									<text>
+										<reference value="#Result.1.2.840.114350.1.13.387.2.7.2.798268.312045017.Comp17"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value value="2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="REAL"/>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id nullFlavor="UNK"/>
+											<representedOrganization>
+												<name>WM RALEIGH CAMPUS LAB</name>
+												<addr>
+													<streetAddressLine>3000 New Bern Ave.</streetAddressLine>
+													<city>Raleigh</city>
+													<state>NC</state>
+													<postalCode>27610</postalCode>
+												</addr>
+											</representedOrganization>
+										</assignedEntity>
+									</performer>
+									<referenceRange>
+										<observationRange>
+											<text>1.2 - 2.3</text>
+											<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="IVL_REAL">
+												<low value="1.2"/>
+												<high value="2.3"/>
+											</value>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="1.2.840.114350.1.72.3.4"/>
+									<id extension="312045017" root="1.2.840.114350.1.13.387.2.7.2.798268"/>
+									<code nullFlavor="UNK"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20230323172000+0000"/>
+									<value code="16" codeSystem="1.2.840.114350.1.72.1.5007" codeSystemName="Epic.Result.Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CD"/>
+								</observation>
+							</component>
+							<component typeCode="COMP">
+								<encounter classCode="ENC" moodCode="EVN">
+									<id extension="189251536" root="1.2.840.114350.1.13.387.2.7.3.698084.8"/>
+									<code code="3" codeSystem="1.2.840.114350.1.13.387.2.7.4.698084.30" codeSystemName="Epic.EncounterType" displayName="Hospital Encounter"/>
+									<effectiveTime>
+										<low value="20230323090000-0400"/>
+										<high value="20230323235900-0400"/>
+									</effectiveTime>
+								</encounter>
+							</component>
+						</organizer>
+					</entry>
+					
+					
 				</section>
 			</component>
 			<component>
