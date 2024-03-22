@@ -1275,42 +1275,47 @@
 									<td/>
 									<td ID="problemComments-2"/>
 								</tr>
+								<tr ID="problemNarrative-3">
+									<td ID="problemDisplayName-3">Type II diabetes mellitus without complication</td>
+									<td ID="problemDescription-3">Type II diabetes mellitus without complication</td>
+									<td>64572001</td>
+									<td ID="problemStatus-3">Active</td>
+									<td>2023-02-04 00:00:00</td>
+									<td/>
+									<td/>
+									<td/>
+									<td ID="problemComments-3"/>
+								</tr>
 							</tbody>
 						</table>
 					</text>
-					<entry>
+					<entry typeCode="DRIV">
 						<act classCode="ACT" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
-							<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.3"/>
-							<id extension="9255673-concern" root="1.2.840.114350.1.13.387.2.7.2.768076"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+							<id nullFlavor="UNK"/>
 							<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
-							<text>
-								<reference value="#problem12"/>
-							</text>
+							<text/>
 							<statusCode code="active"/>
 							<effectiveTime>
 								<low value="20230214"/>
 							</effectiveTime>
-							<entryRelationship inversionInd="false" typeCode="SUBJ">
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-									<templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.4"/>
-									<templateId extension="2022-06-01" root="2.16.840.1.113883.10.20.22.4.4"/>
-									<id extension="9255673" root="1.2.840.114350.1.13.387.2.7.2.768076"/>
-									<code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-										<translation code="75323-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+									<id nullFlavor="NI"/>
+									<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SCT" code="64572001" displayName="64572001">
+										<originalText>64572001</originalText>
+										<translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LN"/>
 									</code>
-									<text>
-										<reference value="#problem12name"/>
-									</text>
+									<text/>
 									<statusCode code="completed"/>
 									<effectiveTime>
 										<low value="20230214"/>
 									</effectiveTime>
 									<value code="313436004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CD">
-										<originalText>
-											<reference value="#problem12name"/>
-										</originalText>
+										<originalText>Type II diabetes mellitus without complication</originalText>
 										<translation code="E11.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10" displayName="Type 2 diabetes mellitus without complication, without long-term current use of insulin"/>
 										<translation code="250.00" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9" displayName="Type 2 diabetes mellitus without complication, without long-term current use of insulin"/>
 										<translation code="64856974" codeSystem="2.16.840.1.113883.3.247.1.1" codeSystemName="Intelligent Medical Objects ProblemIT" displayName="Type 2 diabetes mellitus without complication, without long-term current use of insulin"/>
@@ -1327,8 +1332,8 @@
 									<entryRelationship typeCode="REFR">
 										<observation classCode="OBS" moodCode="EVN">
 											<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-											<templateId extension="2019-06-20" root="2.16.840.1.113883.10.20.22.4.6"/>
-											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+											<templateId root="2.16.840.1.113883.10.20.22.4.6" extension="2014-06-09"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LN" displayName="Status"/>
 											<statusCode code="completed"/>
 											<effectiveTime>
 												<low value="20230214"/>
