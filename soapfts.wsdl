@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://emedny.org/fts/" xmlns:impl="http://emedny.org/fts/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:fts="http://emedny.org/fts/"
+                  xmlns:intf="http://emedny.org/fts/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:types>
+        <xs:schema elementFormDefault="qualified" targetNamespace="http://emedny.org/fts/"
+                   xmlns:tns="http://emedny.org/fts/" xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:import namespace="http://www.w3.org/2005/05/xmlmime"
+                       schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+            <xs:complexType name="Transaction">
+                <xs:sequence>
+                    <xs:element maxOccurs="1" minOccurs="1" name="transData" type="xs:base64Binary"
+                                xmime:expectedContentTypes="*/*"/>
+                    <xs:element maxOccurs="1" minOccurs="1" name="userName" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="1" name="passWord" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="1" name="transType" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="SendReceipt">
+                <xs:sequence>
+                    <xs:element name="fileName" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="FileData">
+                <xs:sequence>
+                    <xs:element name="fileData" type="xs:base64Binary" xmime:expectedContentTypes="*/*"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="FileRequest">
+                <xs:sequence>
+                    <xs:element maxOccurs="1" minOccurs="1" name="userName" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="1" name="passWord" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="1" name="fileName" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="FileNames">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="fileNames" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:complexType name="FileNamesRequest">
+                <xs:sequence>
+                    <xs:element maxOccurs="1" minOccurs="1" name="userName" type="xs:string"/>
+                    <xs:element maxOccurs="1" minOccurs="1" name="passWord" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+
+            <xs:element name="sendData">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="0" name="input" type="tns:Transaction"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="sendDataResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="0" name="output" type="tns:SendReceipt"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="getFile">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="0" name="input" type="tns:FileRequest"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="getResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="0" name="output" type="tns:FileData"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="getFileNames">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="0" name="input" type="tns:FileNamesRequest"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="getNamesResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="0" name="output" type="tns:FileNames"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="Fault">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getFileNamesRequest">
+        <wsdl:part name="parameters" element="impl:getFileNames">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="FTSFault">
+        <wsdl:part name="parameters" element="impl:Fault">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getFileRequest">
+        <wsdl:part name="parameters" element="impl:getFile">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="sendDataRequest">
+        <wsdl:part name="parameters" element="impl:sendData">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getFileResponse">
+        <wsdl:part name="parameters" element="impl:getResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="sendDataResponse">
+        <wsdl:part name="parameters" element="impl:sendDataResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getFileNamesResponse">
+        <wsdl:part name="parameters" element="impl:getNamesResponse">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="FTS">
+        <wsdl:operation name="sendData">
+            <wsdl:input name="sendDataRequest" message="impl:sendDataRequest">
+            </wsdl:input>
+            <wsdl:output name="sendDataResponse" message="impl:sendDataResponse">
+            </wsdl:output>
+            <wsdl:fault name="FTSFault" message="impl:FTSFault">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getFile">
+            <wsdl:input name="getFileRequest" message="impl:getFileRequest">
+            </wsdl:input>
+            <wsdl:output name="getFileResponse" message="impl:getFileResponse">
+            </wsdl:output>
+            <wsdl:fault name="FTSFault" message="impl:FTSFault">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getFileNames">
+            <wsdl:input name="getFileNamesRequest" message="impl:getFileNamesRequest">
+            </wsdl:input>
+            <wsdl:output name="getFileNamesResponse" message="impl:getFileNamesResponse">
+            </wsdl:output>
+            <wsdl:fault name="FTSFault" message="impl:FTSFault">
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="FTS" type="impl:FTS">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="sendData">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="sendDataRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="sendDataResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="FTSFault">
+                <soap:fault name="FTSFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getFile">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getFileRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getFileResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="FTSFault">
+                <soap:fault name="FTSFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getFileNames">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getFileNamesRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getFileNamesResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="FTSFault">
+                <soap:fault name="FTSFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="FTService">
+        <wsdl:port name="FTSPort" binding="impl:FTS">
+            <soap:address location="https://fts.emedny.org:8443/eMedNYServices/FTService/FTService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
+
